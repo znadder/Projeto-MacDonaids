@@ -4,13 +4,14 @@ import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
 
-import homePage from './src/pages/homePage';
-import settingsPage from './src/pages/settingsPage';
-import leadersPage from './src/pages/leadersPage';
-import scanPage from './src/pages/scanPage';
-import mapPage from './src/pages/mapPage';
+import homePage from '../pages/homePage';
+import settingsPage from '../pages/settingsPage';
+import leadersPage from '../pages/leadersPage';
+import scanPage from '../pages/scanPage';
+import mapPage from '../pages/mapPage';
+import login from '../pages/login';
 
-import AIcon from './src/components/index';
+import AIcon from '../components/index';
 
 const App = createBottomTabNavigator(
   {
@@ -27,7 +28,7 @@ const App = createBottomTabNavigator(
       }
     },
     Scan: {
-      screen: scanPage,
+      screen: login,
       navigationOptions: {
 
       }

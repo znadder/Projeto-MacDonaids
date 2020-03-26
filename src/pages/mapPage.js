@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ScrollView, StatusBar, Dimensions, Text } from 'react-native'
 import ScrollableTabView from 'react-native-scrollable-tab-view'
 import { LineChart } from 'react-native-chart-kit'
-import { data, contributionData, pieChartData } from './../components/data'
+import { data } from './../components/data'
 import 'babel-polyfill'
 
 const chartConfigs = [
